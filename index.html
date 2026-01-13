@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DERMA - Basic Shirt Specialist</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <div class="promo-bar">Gratis Ongkir Seluruh Indonesia - Minimal Order 2pcs! ✨</div>
+
+    <nav>
+        <div class="nav-container">
+            <div class="logo">DERMA.</div>
+            <ul class="nav-links">
+                <li><a href="#">Home</a></li>
+                <li><a href="#produk">Shop</a></li>
+                <li><a href="#testimoni">Reviews</a></li>
+            </ul>
+            <div class="cart-icon">🛒 <span id="cart-count">0</span></div>
+        </div>
+    </nav>
+
+    <header class="hero">
+        <div class="hero-content">
+            <span class="sub-title">New Arrivals 2026</span>
+            <h1>Timeless Style for Your Daily Wear.</h1>
+            <p>Dapatkan kemeja basic premium dengan material terbaik. Terlihat mewah, harga tetap ramah.</p>
+            <a href="#produk" class="btn-primary">Lihat Koleksi</a>
+        </div>
+    </header>
+
+    <section class="features">
+        <div class="feature-item">
+            <span>🌿</span>
+            <h4>Premium Cotton</h4>
+            <p>Bahan adem & lembut</p>
+        </div>
+        <div class="feature-item">
+            <span>🚚</span>
+            <h4>Bisa COD</h4>
+            <p>Bayar pas barang sampai</p>
+        </div>
+        <div class="feature-item">
+            <span>⭐</span>
+            <h4>Best Seller</h4>
+            <p>Sudah terjual 1000+</p>
+        </div>
+    </section>
+
+    <section class="products-section" id="produk">
+        <h2 class="section-title">Our Best Seller</h2>
+        <div class="product-grid">
+            <div class="product-card">
+                <div class="badge">Must Have</div>
+                <img src="https://images.unsplash.com/photo-1596755094514-f87e34085b2c?auto=format&fit=crop&w=500&q=80" alt="Kemeja DERMA">
+                <div class="product-info">
+                    <h3>DERMA Signature Shirt</h3>
+                    <p class="price">Rp 120.000</p>
+                    <div class="size-options">
+                        <label>Pilih Ukuran:</label>
+                        <select id="size-select">
+                            <option value="S">Small (S)</option>
+                            <option value="M">Medium (M)</option>
+                            <option value="L">Large (L)</option>
+                            <option value="XL">X-Large (XL)</option>
+                        </select>
+                    </div>
+                    <button class="btn-buy" onclick="openModal()">Pesan Sekarang</button>
+                </div>
+            </div>
+            
+            <div class="product-card secondary">
+                <img src="https://images.unsplash.com/photo-1598033129183-c4f50c7176c8?auto=format&fit=crop&w=500&q=80" alt="Kemeja DERMA">
+                <div class="product-info">
+                    <h3>Classic Black Series</h3>
+                    <p class="price">Coming Soon</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="testimoni" id="testimoni">
+        <h2 class="section-title">What They Say</h2>
+        <div class="testi-container">
+            <div class="testi-card">
+                <p>"Bahannya enak banget, lilac warnanya cantik pol! Gak nyesel beli di DERMA."</p>
+                <h5>- Sarah K.</h5>
+            </div>
+            <div class="testi-card">
+                <p>"Pengiriman cepet, admin ramah, dan bisa COD jadi tenang belanjanya."</p>
+                <h5>- Andi R.</h5>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-about">
+                <div class="logo">DERMA.</div>
+                <p>Spesialis kemeja basic yang mengutamakan kualitas dan kenyamanan Anda.</p>
+            </div>
+            <div class="footer-links">
+                <h4>Support</h4>
+                <p>Hubungi Kami</p>
+                <p>Cara Order</p>
+                <p>Kebijakan COD</p>
+            </div>
+            <div class="footer-social">
+                <h4>Follow Us</h4>
+                <p>Instagram: @derma.official</p>
+                <p>TikTok: @derma.basic</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            &copy; 2026 DERMAWANTY GULO. All Rights Reserved.
+        </div>
+    </footer>
+
+    <div id="checkout-modal" class="modal-overlay">
+        <div class="modal-box">
+            <h2>Konfirmasi Pesanan</h2>
+            <form id="order-form">
+                <input type="text" id="name" placeholder="Nama Lengkap" required>
+                <textarea id="address" placeholder="Alamat Lengkap (Jangan lupa nama jalan & kota)" required></textarea>
+                <select id="payment-method">
+                    <option value="Transfer Bank">Transfer Bank (Bayar Langsung)</option>
+                    <option value="COD">Bayar di Tempat (COD)</option>
+                </select>
+                <button type="submit" class="btn-wa">Kirim Pesanan via WhatsApp</button>
+                <button type="button" class="btn-close" onclick="closeModal()">Batal</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
